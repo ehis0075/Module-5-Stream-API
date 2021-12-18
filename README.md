@@ -52,6 +52,17 @@ intermediate and terminals calls on streams
 
 - an intermediate call does not trigger anything, having just intermediate calls no data will be processed.
 
+Match reduction operations
+- three types: anyMatch(), allMatch() and noneMatch()
+- there are all terminals operations that return a boolean
+also called short-circuiting terminal operations
 
+Find Reduction operations
+- two types: findFirst() and findAny()
+- they might have nothing to return. they should return Optional instead of empty
 
- 
+Reduce Reduction steps
+- there are three types of reduce reduction:
+1. if no identity element is provided, then an Optional is returned.
+2. associativity is assumed for the reduction function, but not enforced.
+3. 
