@@ -41,4 +41,17 @@ Stream.of("one");
 6. a random Stream
   ThreadLocalRandom.current().ints();
 
+
+intermediate and terminals calls on streams
+- example are forEach() and peek() methods
+- the peek used mainly for debugging not for production
+- peek() is an intermediate operation while forEach() is a terminal operation
+
+- a terminal operation triggers the processing of a stream.
+- if i have no terminal operation, no data will be processed and no result will be provided
+
+- an intermediate call does not trigger anything, having just intermediate calls no data will be processed.
+
+
+
  
